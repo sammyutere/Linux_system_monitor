@@ -1,0 +1,2 @@
+# Linux_system_monitor
+This system monitor will continuously monitor the CPU, memory, and disk usage of your Linux system and display the usage percentages. If any of the thresholds for CPU, memory, or disk usage are exceeded, an alert will be sent. You can customise the threshold values as per your requirements and add your own logic to send alerts.
