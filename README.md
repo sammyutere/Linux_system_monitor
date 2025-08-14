@@ -5,7 +5,7 @@ To save the system_monitor.sh file,
   - press colon key :
   - type wq and hit enter key on your keyboard
 
-**What Does the Code in System_monitor.sh do?**
+**The Bash script continuously monitors CPU, memory, and disk usage, sending alerts if usage exceeds specified thresholds. Here's a breakdown of how it works:**
 
 #!/bin/bash: This line specifies that the script will be interpreted using the Bash shell.
 CPU_THRESHOLD=80: Sets the CPU usage threshold to 80%. You can adjust this value later.
@@ -16,6 +16,11 @@ $1 represents the resource type (e.g., CPU, Memory, Disk).
 $2 represents the current usage percentage.
 tput setaf 1: Changes the text color to red to make alerts visually distinct.
 tput sgr0: Resets the text formatting to normal after the alert message.
+
+while true; do 
+This creates a loop that runs indefinitely.
+
+
 
 top -bn1: Runs the top command in batch mode for one iteration to fetch real-time CPU stats.
 grep "Cpu(s)": Filters the output to focus on the CPU usage line.
