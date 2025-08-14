@@ -1,5 +1,6 @@
-This system monitor will continuously monitor the CPU, memory, and disk usage of your Linux system and display the usage percentages. If any of the thresholds for CPU, memory, or disk usage are exceeded, an alert will be sent. You can customise the threshold values as per your requirements and add your own logic to send alerts.
-This loop continuously monitors and updates resource usage, clearing the screen and displaying current stats at regular intervals.
+This system monitor will continuously monitor the CPU, memory, and disk usage of your Linux system and display the usage percentages. If any of the thresholds for CPU, memory, or disk usage are exceeded, an alert will be sent. You can customise the threshold values as per your requirements and add your own logic to send alerts.  This loop continuously monitors and updates resource usage, clearing the screen and displaying current stats at regular intervals.
+
+It also records resource usage (CPU, memory, and disk) into a log file after every monitoring cycle. 
 
 To save the system_monitor.sh file, 
   - press esc key
