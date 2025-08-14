@@ -26,3 +26,10 @@ if ((cpu_usage >= CPU_THRESHOLD)): Compares the CPU usage with the threshold and
 free: Provides memory usage stats.
 awk '/Mem/ {printf("%3.1f", ($3/$2) * 100)}': Calculates the percentage of memory in use by dividing used memory ($3) by total memory ($2).
 The script compares memory_usage with the threshold and sends an alert if necessary.
+
+df -h /: Fetches disk usage stats for the root directory.
+awk '/\// {print $(NF-1)}': Extracts the usage percentage column.
+disk_usage=${disk_usage%?}: Removes the % symbol for easier comparisons.
+Alerts are triggered if the disk usage exceeds the threshold.
+
+
