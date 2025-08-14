@@ -5,7 +5,7 @@ To save the system_monitor.sh file,
   - press colon key :
   - type wq and hit enter key on your keyboard
 
-*What Does the Code in System_monitor.sh do?*
+**What Does the Code in System_monitor.sh do?**
 
 #!/bin/bash: This line specifies that the script will be interpreted using the Bash shell.
 CPU_THRESHOLD=80: Sets the CPU usage threshold to 80%. You can adjust this value later.
