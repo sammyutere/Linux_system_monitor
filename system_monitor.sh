@@ -41,8 +41,3 @@ while true; do
   sleep 2
 done
 
-# After calculating resource usage values, add the following code:
-
-# Log resource usage to a file
-log_entry="$(date '+%Y-%m-%d %H:%M:%S') CPU: $cpu_usage% Memory: $memory_usage% Disk: $disk_usage%"
-echo "$log_entry" >> /home/labex/project/resource_usage.log
