@@ -2,8 +2,6 @@ This system monitor will continuously monitor the CPU, memory, and disk usage of
 
 This loop continuously monitors and updates resource usage, clearing the screen and displaying current stats at regular intervals.
 
-It also records resource usage (CPU, memory, and disk) into a log file after every monitoring cycle. 
-
 To save the system_monitor.sh file, 
   - press esc key
   - press colon key :
