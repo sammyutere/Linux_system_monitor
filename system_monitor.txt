@@ -3,3 +3,4 @@ cd ~/project #Changes the current directory to the project folder located in you
 touch system_monitor.sh #Creates a new empty file named system_monitor.sh in the current directory
 vi system_monitor.sh #Opens the empty file, paste the code in the system_monitor.sh file, follow instruction in the README file to save and quit
 chmod +x system_monitor.sh #Make the file executable
+./system_monitor.sh #Run the script
