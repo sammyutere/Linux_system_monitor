@@ -11,3 +11,9 @@ To save the system_monitor.sh file,
 CPU_THRESHOLD=80: Sets the CPU usage threshold to 80%. You can adjust this value later.
 MEMORY_THRESHOLD=80 and DISK_THRESHOLD=80: Similarly, these define thresholds for memory and disk usage.
 
+send_alert: The function takes two arguments:
+$1 represents the resource type (e.g., CPU, Memory, Disk).
+$2 represents the current usage percentage.
+tput setaf 1: Changes the text color to red to make alerts visually distinct.
+tput sgr0: Resets the text formatting to normal after the alert message.
+
