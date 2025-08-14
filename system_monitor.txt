@@ -1,5 +1,5 @@
 mkdir project #Create your project folder called "project"
 cd ~/project #Changes the current directory to the project folder located in your home directory 
 touch system_monitor.sh #Creates a new empty file named system_monitor.sh in the current directory
-vi system_monitor.sh #Opens the empty file, paste the code in the README file, follow instruction to save and quit
+vi system_monitor.sh #Opens the empty file, paste the code in the system_monitor.sh file, follow instruction in the README file to save and quit
 chmod +x system_monitor.sh #Make the file executable
