@@ -19,6 +19,6 @@ tput sgr0: Resets the text formatting to normal after the alert message.
 
 top -bn1: Runs the top command in batch mode for one iteration to fetch real-time CPU stats.
 grep "Cpu(s)": Filters the output to focus on the CPU usage line.
-awk '{print $2 + $4}': Extracts and sums the percentages of user and system CPU usage.
+awk '{print $2+$4}': Extracts and sums the percentages of user and system CPU usage.
 cpu_usage=${cpu_usage%.*}: Strips the decimal part to simplify threshold comparisons.
 if ((cpu_usage >= CPU_THRESHOLD)): Compares the CPU usage with the threshold and calls send_alert if it’s exceeded.
