@@ -22,3 +22,7 @@ grep "Cpu(s)": Filters the output to focus on the CPU usage line.
 awk '{print $2+$4}': Extracts and sums the percentages of user and system CPU usage.
 cpu_usage=${cpu_usage%.*}: Strips the decimal part to simplify threshold comparisons.
 if ((cpu_usage >= CPU_THRESHOLD)): Compares the CPU usage with the threshold and calls send_alert if it’s exceeded.
+
+free: Provides memory usage stats.
+awk '/Mem/ {printf("%3.1f", ($3/$2) * 100)}': Calculates the percentage of memory in use by dividing used memory ($3) by total memory ($2).
+The script compares memory_usage with the threshold and sends an alert if necessary.
