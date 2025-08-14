@@ -37,4 +37,7 @@ awk '/\// {print $(NF-1)}': Extracts the usage percentage column.
 disk_usage=${disk_usage%?}: Removes the % symbol for easier comparisons.
 Alerts are triggered if the disk usage exceeds the threshold.
 
+Clears the terminal and displays current resource usage.
+sleep 2: Pauses for 2 seconds before the next iteration.
+
 
